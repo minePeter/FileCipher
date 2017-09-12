@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:longClickable="false"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+        />
+    <Button
+        android:id="@+id/inputButton"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="写入"
+    	android:layout_below="@id/inputEditText"
+    	android:onClick="input" 
+        />
+    <Button
+        android:id="@+id/outputButton"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="读出"
+    	android:layout_below="@id/inputEditText"
+    	android:layout_toRightOf="@id/inputButton"
+    	android:onClick="output"
+        />
+</RelativeLayout>
